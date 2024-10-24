@@ -8,7 +8,6 @@
 ## :detective: **Team members** :detective:
 
 <div align="center">
-## :detective: **Team members** :detective:
 
 [![Clark D. Gemongala](https://img.shields.io/badge/Clark%20D.%20Gemongala-GitHub-blue?style=for-the-badge)](https://github.com/beplopcitu)
 
