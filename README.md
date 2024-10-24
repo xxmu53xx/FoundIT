@@ -1,9 +1,7 @@
 <!-- Center align content -->
 <div align="center">
 
-<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/null/external-search-basic-ui-elements-flatart-icons-flat-flatarticons.png" alt="magnifying glass emoji" width="64"/>
-
-# **FoundIT**
+🔍 **FoundIT** 🔍
 
 ---
 
