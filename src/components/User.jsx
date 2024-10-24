@@ -41,7 +41,7 @@ const UserCrud = () => {
     try {
       if (isEditing) {
         // Update user
-        await axios.put(`http://localhost:8083/api/users/putUserDetails?id=${user.userID}`, user);
+        await axios.put(`http://localhost:8083/api/users/putUserDetails/?id=${user.userID}`, user);
         alert('User updated successfully!');
       } else {
         // Create new user
@@ -53,6 +53,7 @@ const UserCrud = () => {
       resetForm(); // Reset the form
     } catch (error) {
       console.error('Error saving user:', error);
+      alert('Error saving user. Please try again.'); // Alert the user in case of an error
     }
   };
 
@@ -99,70 +100,70 @@ const UserCrud = () => {
       <div className="content">
         <h1>{isEditing ? 'Edit User' : 'Create New User'}</h1>
         <form onSubmit={handleSubmit} className="user-form">
-  <div className="form-group">
-    <label>Email: &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</label>
-    <input
-      type="text"
-      name="schoolEmail"
-      placeholder="School Email"
-      value={user.schoolEmail}
-      onChange={handleChange}
-      required
-    />
-  </div>
+          <div className="form-group">
+            <label>Email: &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</label>
+            <input
+              type="text"
+              name="schoolEmail"
+              placeholder="School Email"
+              value={user.schoolEmail}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-  <div className="form-group">
-    <label>School ID:&nbsp;</label>
-    <input
-      type="text"
-      name="schoolId"
-      placeholder="School ID"
-      value={user.schoolId}
-      onChange={handleChange}
-      required
-    />
-  </div>
+          <div className="form-group">
+            <label>School ID:&nbsp;</label>
+            <input
+              type="text"
+              name="schoolId"
+              placeholder="School ID"
+              value={user.schoolId}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-  <div className="form-group">
-    <label>Password:&nbsp;</label>
-    <input
-      type="password" // Changed to password type for security
-      name="password"
-      placeholder="Password"
-      value={user.password}
-      onChange={handleChange}
-      required
-    />
-  </div>
+          <div className="form-group">
+            <label>Password:&nbsp;</label>
+            <input
+              type="password" // Set to password type for security
+              name="password"
+              placeholder="Password"
+              value={user.password}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-  <div className="form-group">
-    <label>Biography:&nbsp;</label>
-    <input
-      type="text"
-      name="bio"
-      placeholder="Bio"
-      value={user.bio}
-      onChange={handleChange}
-    />
-  </div>
+          <div className="form-group">
+            <label>Biography:&nbsp;</label>
+            <input
+              type="text"
+              name="bio"
+              placeholder="Bio"
+              value={user.bio}
+              onChange={handleChange}
+            />
+          </div>
 
-  <div className="form-group">
-    <label>Points: &nbsp; &nbsp; &nbsp;&nbsp;</label>
-    <input
-      type="number"
-      name="currentPoints"
-      placeholder="Current Points"
-      value={user.currentPoints}
-      onChange={handleChange}
-      required
-    />
-  </div>
+          <div className="form-group">
+            <label>Points: &nbsp; &nbsp; &nbsp;&nbsp;</label>
+            <input
+              type="number"
+              name="currentPoints"
+              placeholder="Current Points"
+              value={user.currentPoints}
+              onChange={handleChange}
+              required
+            />
+          </div>
 
-  <div className="form-buttons">
-    <button type="submit" className="btn">{isEditing ? 'Update User' : 'Create User'}</button>
-    {isEditing && <button type="button" className="cancel-btn" onClick={resetForm}>Cancel Edit</button>}
-  </div>
-</form>
+          <div className="form-buttons">
+            <button type="submit" className="btn">{isEditing ? 'Update User' : 'Create User'}</button>
+            {isEditing && <button type="button" className="cancel-btn" onClick={resetForm}>Cancel Edit</button>}
+          </div>
+        </form>
 
         <h2>Users List</h2>
         <div className="user-list-container">
@@ -177,12 +178,21 @@ const UserCrud = () => {
                   <button className="btn" onClick={() => handleEdit(user)}>Edit</button>
                   <button className="delete-btn" onClick={() => handleDelete(user.userID)}>Delete</button>
                 </div>
-                --------------------------------------------------------------------------------------------------------------------------------------------------
+                <hr />
               </li>
             ))}
           </ul>
         </div>
       </div>
+
+      {/* Floating Action Button for Creating User */}
+      <button 
+        className="fab" 
+        onClick={resetForm}
+        title="Create New User"
+      >
+        +
+      </button>
     </div>
   );
 };
