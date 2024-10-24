@@ -1,13 +1,24 @@
-🔍 **FoundIT** 🔍
+<!-- Center align content -->
+<div align="center">
 
-**------------------------------**
+<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/null/external-search-basic-ui-elements-flatart-icons-flat-flatarticons.png" alt="magnifying glass emoji" width="64"/>
 
-:detective: **Team members** :detective:
+# **FoundIT**
 
-- [Clark D. Gemongala](https://github.com/beplopcitu)
-- [Drew Adrien C. Odilao](https://github.com/DrewingBook)
-- [John Wayne M. Largo](https://github.com/xxmu53xx)
+---
 
-**------------------------------**
+## :detective: **Team members** :detective:
 
-Our Progress: [Trello](https://trello.com/b/5qpYsdJQ/foundit)
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/beplopcitu"><img src="https://avatars.githubusercontent.com/u/123456789?v=4" width="100px;" alt="Clark D. Gemongala"/><br /><sub><b>Clark D. Gemongala</b></sub></a></td>
+    <td align="center"><a href="https://github.com/DrewingBook"><img src="https://avatars.githubusercontent.com/u/987654321?v=4" width="100px;" alt="Drew Adrien C. Odilao"/><br /><sub><b>Drew Adrien C. Odilao</b></sub></a></td>
+    <td align="center"><a href="https://github.com/xxmu53xx"><img src="https://avatars.githubusercontent.com/u/135792468?v=4" width="100px;" alt="John Wayne M. Largo"/><br /><sub><b>John Wayne M. Largo</b></sub></a></td>
+  </tr>
+</table>
+
+---
+
+## Our Progress: [Trello](https://trello.com/b/5qpYsdJQ/foundit)
+
+</div>
