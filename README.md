@@ -145,8 +145,8 @@ yarn dev
 | <img src="https://drive.google.com/uc?export=view&id=13l3nOZzVj83df6m5A9_MeR6W0FJvRmAJ" style="width:150px;height:150px;border-radius:50%;" alt="John Wayne M. Largo"/> | [![John Wayne M. Largo](https://img.shields.io/badge/John%20Wayne%20M.%20Largo-GitHub-red?style=for-the-badge)](https://github.com/xxmu53xx) |
 
 
+<center>
 
+*Smart Waste Management System - Making waste collection smarter, one pickup at a time.*
 
-*Smart Waste Management System - Making waste collection smarter, one pickup at a time.*RetryClaude does not have the ability to run the code it generates yet.Claude can make mistakes. Please double-check responses.
-
-
+</center>
