@@ -97,20 +97,16 @@ Have questions or need assistance? Our support team is here to help!
 #### Web Application Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/IT342-G4-GarbageManagementSystem.git
+git clone https://github.com/Username/IT342-G4-GarbageManagementSystem.git
 
 # Navigate to project directory
 cd IT342-G4-GarbageManagementSystem
 
 # Install dependencies
-npm install
-# or
-yarn install
+npm install --legacy-peer-deps
 
 # Start development server
 npm run dev
-# or
-yarn dev
 ```
 
 ## Mobile Application Setup
